@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "main": "is-password-ok",
   "scripts": {
-    "pretest": "echo 'TODO: linting'",
+    "pretest": "standard --fix",
     "test": "node test"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2"
   }
 }
