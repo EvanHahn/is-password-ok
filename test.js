@@ -16,7 +16,7 @@ const INVALID = [
   null,
   123456789012,
   ['this is an array'],
-  {i: 'am an object'},
+  { i: 'am an object' },
 
   '',
   '  ',
