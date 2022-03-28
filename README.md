@@ -1,5 +1,4 @@
-is-password-ok
-==============
+# is-password-ok
 
 Returns `true` if the password:
 
@@ -10,16 +9,16 @@ Returns `true` if the password:
 This project uses `Set`, which you'll need to polyfill if you don't have it.
 
 ```js
-import isPasswordOk from '@evanhahn/is-password-ok'
+import isPasswordOk from "@evanhahn/is-password-ok";
 
 // these return true
-isPasswordOk('this is a long password')
-isPasswordOk(';(a[{k4IA')
+isPasswordOk("this is a long password");
+isPasswordOk(";(a[{k4IA");
 
 // these return false
-isPasswordOk('2short')
-isPasswordOk('chocolate')
-isPasswordOk(12345678900)
+isPasswordOk("2short");
+isPasswordOk("chocolate");
+isPasswordOk(12345678900);
 ```
 
 Made for a personal project. Your app's password rules may vary!

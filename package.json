@@ -4,10 +4,15 @@
   "version": "0.0.0",
   "main": "is-password-ok",
   "scripts": {
-    "pretest": "standard --fix",
+    "pretest": "npm run lint",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "format": "prettier --write .",
     "test": "node test"
   },
   "devDependencies": {
-    "standard": "^16.0.3"
+    "eslint": "^7.13.0",
+    "prettier": "^2.6.1"
   }
 }
