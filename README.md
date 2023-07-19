@@ -3,7 +3,7 @@
 Returns `true` if the password:
 
 - is a string
-- is between 9 and 72 characters, inclusive
+- has a [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) between 9 and 72 characters, inclusive
 - isn't one of the top 100 most common passwords (excluding those that don't meet the other criteria)
 
 This project uses `Set`, which you'll need to polyfill if you don't have it.
