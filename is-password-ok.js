@@ -101,8 +101,7 @@ const COMMON = new Set([
   "diosesamor",
 ]);
 
-module.exports = function (s) {
-  return (
-    typeof s === "string" && s.length >= 9 && s.length <= 72 && !COMMON.has(s)
-  );
-};
+const isPasswordOk = (s) =>
+  typeof s === "string" && s.length >= 9 && s.length <= 72 && !COMMON.has(s);
+
+export default isPasswordOk;

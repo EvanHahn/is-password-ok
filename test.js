@@ -1,5 +1,8 @@
-const isPasswordOk = require("./is-password-ok");
-const assert = require("assert");
+import isPasswordOk from "./is-password-ok.js";
+
+const assert = (condition, message) => {
+  if (!condition) throw new Error(message);
+};
 
 const VALID = [
   "aaaaaaaaa",
